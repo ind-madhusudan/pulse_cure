@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Outfit;
+}
+
+.active hr {
+    @apply block
+}
+
+@media (max-width:740px) {
+    .active  p{
+       @apply text-white bg-primary
+    }
+}
+
+::-webkit-scrollbar {
+    @apply hidden
+}
+
+
+/* Define Animation  Marquee */
+@keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Marquee Animation */
+  .animate-marquee {
+    display: inline-flex;
+    min-width: 100%;
+    animation: marquee 150s linear infinite;
+  }
+  
+  /* Responsive Animation Speed */
+  @media (max-width: 640px) {
+    .animate-marquee {
+      animation-duration: 150s;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .animate-marquee {
+      animation-duration: 150s;
+    }
+  }
+
+  /* Typing Effect */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+
+  /* speciality menu css */
+
+  @keyframes spin-slow {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+    }
+  .animate-spin-slow {
+     animation: spin-on-hover 5s linear infinite;
+   }
