@@ -68,7 +68,8 @@ npm start
 ```
 
 ## 📸 Screenshots
-_Add screenshots of the application here_
+![Demo](https://github.com/ind-madhusudan/pulse_cure/blob/main/UI/2025-03-2016-26-45-ezgif.com-video-to-gif-converter.gif))
+
 
 ## 🔎 Future Enhancements
 - Add doctor availability management.
